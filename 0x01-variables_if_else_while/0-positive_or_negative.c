@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Print's number (if) positive , (else if)
+ * zero, else(negative)
+ *
+ * return is 0
+ */
 int main(void)
 {
 	int n;
