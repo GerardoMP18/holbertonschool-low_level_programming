@@ -3,10 +3,9 @@
 #include <time.h>
 
 /**
- * main - Print's number (if) positive , (else if)
- * zero, else(negative)
+ * main - Print's number (if) positive , (else if) zero, else(negative)
  *
- * return is 0
+ * Return: is 0
  */
 int main(void)
 {
