@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - prints all ossible different combinations
- * Return: Always 0 (success)
- */
+* main - Prints all posible different combinations
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int n, c;
+	int x, d;
 
-	for (n = 48; n <= 57; n++)
+	for (x = 48; x <= 57; x++)
 	{
-		for (c = 48; c <= 57; c++)
+		for (d = x; d <= 57; d++)
 		{
-			putchar(n);
-			putchar(c);
-			if (n != 57 || c != 57)
+			if (x != d)
+			{
+			putchar(x);
+			putchar(d);
+			if (x < 56)
 			{
 				putchar(',');
 				putchar(' ');
+			}
 			}
 		}
 	}
