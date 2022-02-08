@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/** 
-* main - print the las digit of the number 
-* stored in the variable n
-* Return: Always 0 (Success)
-*/
+/**
+ * main - prints the last digit of the random
+ * number stored in the variable n
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
@@ -22,4 +22,3 @@ int main(void)
 		printf("and is less than 6 and not 0\n");
 	return (0);
 }
-
