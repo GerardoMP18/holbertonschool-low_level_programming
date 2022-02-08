@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/**
+/** 
 * main - print the las digit of the number 
 * stored in the variable n
 * Return: Always 0 (Success)
