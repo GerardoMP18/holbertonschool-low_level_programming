@@ -5,7 +5,7 @@
  */
 void jack_bauer(void)
 {
-	int num, mult, prod;
+	int numero, mult, prod;
 	for (numero = 0; numero < 10; numero++)
 	{
 		_putchar('0');
