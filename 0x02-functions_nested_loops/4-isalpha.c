@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - for alphabetic character
+ * _isalpha - for alphabetic character
  * @c: character 
  * Return: 0
  */
