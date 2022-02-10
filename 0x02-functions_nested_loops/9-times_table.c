@@ -3,7 +3,7 @@
 /**
  * jack_bauer -  prints the 9 times table, starting with 0.
  */
-void jack_bauer(void)
+void times_table(void)
 {
 	int numero, mult, prod;
 	for (numero = 0; numero < 10; numero++)
