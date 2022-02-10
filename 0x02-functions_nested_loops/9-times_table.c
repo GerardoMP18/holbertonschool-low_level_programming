@@ -1,28 +1,39 @@
 #include "main.h"
 
 /**
- * jack_bauer -  prints the 9 times table, starting with 0.
+ * times_table - prints the 9 times table, starting with 0.
  */
+
 void times_table(void)
 {
-	int numero, mult, prod;
-	for (numero = 0; numero < 10; numero++)
+	int row;
+	int column;
+	int prod;
+
+	for (row = 0; row <= 9; row++)
 	{
-		_putchar('0');
-
-		for (mult = 1; mult < 10 ; mult++)
+		for (column = 0; column <= 9; column++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			prod = (row * column);
 
-			prod = numero * mult;
-
-			if (prod < 10 )
+			if (column == 0)
+			{
+				_putchar('0' + prod);
+			}
+			else if (prod <= 9)
+			{
+				_putchar(',');
 				_putchar(' ');
-			else
-				_putchar((prod / 10) + '0');
-
-			_putchar((prod % 10) + '0');
+				_putchar(' ');
+				_putchar('0' + prod);
+			}
+			else if (prod > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (prod / 10));
+				_putchar('0' + (prod % 10));
+			}
 		}
 		_putchar('\n');
 	}
