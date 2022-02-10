@@ -10,7 +10,7 @@ void jack_bauer(void)
 	{
 		_putchar('0');
 
-		for (mult = 1; mult < ; mult++)
+		for (mult = 1; mult < 10 ; mult++)
 		{
 			_putchar(',');
 			_putchar(' ');
