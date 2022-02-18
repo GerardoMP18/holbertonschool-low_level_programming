@@ -3,12 +3,11 @@
  * _strcat - function that concatenates two strings
  * @dest: input value
  * @src: input value
- *
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int a ,b;
+	int a, b;
 	a = 0;
 	b = 0;
 
@@ -22,7 +21,6 @@ char *_strcat(char *dest, char *src)
 		a++;
 		b++;
 	}
-
 	dest[a] = '\0';
 	return (dest);
 }
