@@ -3,13 +3,12 @@
  * _strcmp - function that compares two strings
  * @s1: input character
  * @s2: input character
- * Return: Always 0
+ * Return: Always0
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
-	int p = 0;
+	int i = 0, p = 0;
 
 	while (p == 0)
 	{
