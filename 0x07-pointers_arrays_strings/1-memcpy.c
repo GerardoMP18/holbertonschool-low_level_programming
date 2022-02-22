@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _memcpy : function that copies memory area
- * @dest: dsec
+ * _memcpy - function that copies memory area
+ * @dest: copies the memory area
  * @src: desc
  * @n: desc
  *
