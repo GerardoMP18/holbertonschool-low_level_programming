@@ -2,7 +2,7 @@
 
 /*
  * _memset - function that fills memory
- * @s: memory area to fill
+ * @s: memory area to filll
  * @b: byte to fill
  * @n: bytes of the memory area pointed
  * Return : pointer to the memory area
