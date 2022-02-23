@@ -3,7 +3,7 @@
 /**
  * print_line - unction that draws a straight line in the terminal.
  *
- * @n: character 
+ * @n: character
  *
  * Return: Always (0)
  */
