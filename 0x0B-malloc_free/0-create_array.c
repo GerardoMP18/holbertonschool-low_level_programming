@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * create_array - Function for creates an arrays of chars
- * @:size
- *
- */
+ * *create_array - Function for creates an arrays of chars
+ * @size: The size of the array
+ * @c: Initializer
+ * Return : The pointer "c"
+ **/
 
 char *create_array(unsigned int size, char c)
 {
@@ -15,17 +15,17 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	p = malloc(sizeof(*p) * size);
-	
 	if (p == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	i = 0;
+
 	while (i < size)
 	{
 		p[i] = c;
