@@ -6,25 +6,29 @@
  * dimensional arrays of integer
  * @width: columns
  * @height: rows
- * Return: desc:
+ * Return: desc....
  */
 int **alloc_grid(int width, int height)
 {
 	int **array;
 	int i, j;
 
-	if (width < 1 || height < 1)
+	if (width <= 1 || height <= 1)
 		return (NULL);
 	array = malloc(sizeof(int *) * height);
 	if (array == NULL)
+	{
+		free(array);
 		return (NULL);
+	}
 	for (i = 0; i < height; i++)
 	{
 		array[i] = malloc(sizeof(int) * width);
 		if (array[i] == NULL)
 		{
-			for (; i >= 0; j--)
-				free(array[i]);
+			free(array);
+			for (j = 0; j <= i; j++)
+				free(array[j]);
 			free(array);
 			return (NULL);
 		}
