@@ -36,16 +36,17 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	i = 0;
-
 	while (s1[i])
+	{
 		concat[j++] = s1[i];
 		i++;
+	}
 
 	i = 0;
-
 	while (s2[i])
+	{
 		concat[j++] = s2[i];
 		i++;
-
+	}
 	return (concat);
 }
