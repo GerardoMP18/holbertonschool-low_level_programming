@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - printf (__FILE__)
- * Return: success (0)
+ * main - Printf the file
+ * Return: Success zero
  */
 int main(void)
 {
