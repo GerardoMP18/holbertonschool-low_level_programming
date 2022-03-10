@@ -7,21 +7,24 @@
 
 int main(void)
 {
-	int i;
-	int j = 50;
+	int i = 0;
 	long a = 1;
 	long b = 2;
 
-	for (i = 1; i <= (j / 2); i++)
+	for (i; i < 50; i++)
 	{
-		printf("%li %li ", a, b);
-		a += b;
-		b += a;
+		if (i == 0)
+			printf("%ld", a);
+		else if (i == 1)
+			printf(", %ld", b);
+		else
+		{
+			b += a;
+			a = b - a;
+			printf(", %ld", b);
+		}
 	}
-	if (j % 2 == 1)
-		printf("%li", a);
 
 	printf("\n");
-
 	return (0);
 }
