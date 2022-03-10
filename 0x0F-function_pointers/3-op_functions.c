@@ -1,8 +1,8 @@
 /**
- * op_add - operator addition
- * @a: number
- * @b: number
- * Return: Operation a + b = result
+ * op_add - addition
+ * @a: integer
+ * @b: integer
+ * Return: result
  */
 int op_add(int a, int b)
 {
@@ -10,10 +10,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - Operator subtraction
- * @a: number
- * @b: number
- * Return: Operation a - b = result
+ * op_sub - subtraction
+ * @a: integer
+ * @b: integer
+ * Return: result
  */
 int op_sub(int a, int b)
 {
@@ -21,10 +21,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - Operator multiplication
- * @a: number;
- * @b: number;
- * Return: Operation a * b = result
+ * op_mul - multilication
+ * @a: integer
+ * @b: integer
+ * Return: result
  */
 int op_mul(int a, int b)
 {
@@ -32,10 +32,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - Operator division
- * @a: number
- * @b: number
- * Return: Operation a / b = result
+ * op_div - division
+ * @a: integer
+ * @b: integer
+ * Return: result
  */
 int op_div(int a, int b)
 {
@@ -43,10 +43,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - Operator modulo
- * @a: number
- * @b: number
- * Return: Operation a % b = result
+ * op_mod - modulus
+ * @a: integer
+ * @b: integer
+ * Return: result
  */
 int op_mod(int a, int b)
 {
