@@ -3,7 +3,7 @@
 
 /**
  * get_op_func - desc
- * @s: Operation
+ * @s: operation
  * Return: pointer
  */
 
@@ -17,16 +17,13 @@ int (*get_op_func(char *s))(int a, int b)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
+	int i = 0;
 
-	int i;
-
-	for (i = 0; ops[i].op != NULL; i++)
+	while (ops[i].op != NULL)
 	{
 		if (*s == *ops[i].op)
-		{
 			return (ops[i].f);
-		}
+		i++;
 	}
-
 	return (NULL);
 }
