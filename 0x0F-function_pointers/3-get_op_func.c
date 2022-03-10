@@ -5,8 +5,6 @@
  * get_op_func - ...
  * @s: Operation
  * Return: result of operation
- *
- *
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -20,9 +18,9 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; ops[i].op != 0; i++)
+	for (i = 0; i < 5; i++)
 	{
-		if (*s == *ops[i].op)
+		if (strcmp(s, ops[i].op) == 0)
 		{
 			return (ops[i].f);
 		}
