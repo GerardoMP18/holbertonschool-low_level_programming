@@ -4,14 +4,12 @@
  * main - Program for print first 50 Fibonacci numbers
  * Return: 0
  */
-
 int main(void)
 {
 	int i = 0;
-	long a = 1;
-	long b = 2;
+	long a = 1, b = 2;
 
-	for (i; i < 50; i++)
+	while (i < 50)
 	{
 		if (i == 0)
 			printf("%ld", a);
@@ -23,6 +21,8 @@ int main(void)
 			a = b - a;
 			printf(", %ld", b);
 		}
+
+		++i;
 	}
 
 	printf("\n");
