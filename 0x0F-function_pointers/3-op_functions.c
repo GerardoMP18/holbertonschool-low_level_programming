@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * op_add - operator addition
  * @a: number
@@ -47,6 +48,7 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a / b);
 }
 
@@ -63,5 +65,6 @@ int op_mod(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
+
 	return (a % b);
 }

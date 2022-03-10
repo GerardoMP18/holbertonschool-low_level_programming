@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
-  * main - ...
-  * @argc: ...
-  * @argv: ...
-  * Return: ...
-  */
+ * main - desc
+ * @argc: desc
+ * @argv: desc
+ * Return: desc
+ */
 int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
