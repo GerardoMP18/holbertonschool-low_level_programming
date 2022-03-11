@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 /**
  * print_all - function that prints anything.
  * @format: format
@@ -22,8 +23,7 @@ void print_all(const char * const format, ...)
 				y = 0;
 				break;
 			case 'i':
-				va_argI = va_arg(valist, int);
-				printf("%i", va_argI);
+				printf("%i", va_arg(valist, int));
 				y = 0;
 				break;
 			case 'f':
