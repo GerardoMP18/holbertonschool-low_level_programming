@@ -1,25 +1,25 @@
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h>
 /**
- * print_all - function thsat prints anything.
- * @format: format
+ * print_all - .......
+ * @format: ...........
  */
 void print_all(const char * const format, ...)
 {
-	int i, y, va_argI;
-	char *pointer, *va_argC;
-	va_list valist;
-	double va_argD;
+	int i;
+	int y;
+	char *pointer;
+	vvalist valist;
 
 	va_start(valist, format);
-	for (i = 0; format != NULL && format[i] != '\0'; i++)
+	i = 0;
+	while (format != NULL && format[i] != '\0')
 	{
 		switch (format[i])
 		{
 			case 'c':
-				va_argI = va_arg(valist, int);
-				printf("%c", va_argI);
+				printf("%c", va_arg(valist, int));
 				y = 0;
 				break;
 			case 'i':
@@ -27,13 +27,11 @@ void print_all(const char * const format, ...)
 				y = 0;
 				break;
 			case 'f':
-				va_argD = va_arg(valist, double);
-				printf("%f", va_argD);
+				printf("%f", va_arg(valist, double));
 				y = 0;
 				break;
 			case 's':
-				va_argC = va_arg(valist, char*);
-				pointer = va_argC;
+				pointer = va_arg(valist, char*);
 				if (pointer == NULL)
 					pointer = "(nil)";
 				printf("%s", pointer);
@@ -45,6 +43,7 @@ void print_all(const char * const format, ...)
 		}
 		if (format[i + 1] != '\0' && y == 0)
 			printf(", ");
+		i++;
 	}
 	printf("\n");
 }
