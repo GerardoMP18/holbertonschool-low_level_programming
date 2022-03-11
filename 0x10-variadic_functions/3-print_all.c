@@ -2,15 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_all - .......
- * @format: ...........
+ * print_all - desc
+ * @format: desc
  */
 void print_all(const char * const format, ...)
 {
 	int i;
 	int y;
 	char *pointer;
-	vvalist valist;
+	va_list valist;
 
 	va_start(valist, format);
 	i = 0;
