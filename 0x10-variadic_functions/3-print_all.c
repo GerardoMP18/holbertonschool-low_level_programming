@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * print_all - function that prints anything.
+ * print_all - function thsat prints anything.
  * @format: format
  */
 void print_all(const char * const format, ...)
