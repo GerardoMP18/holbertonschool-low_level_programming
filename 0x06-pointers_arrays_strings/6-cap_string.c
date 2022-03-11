@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * cap_string - Function that capitalizes all words  of a string
- * @s: input character
- *
- * Return: char value
- */
+  * cap_string - ...
+  * @s: ...
+  *
+  * Return: char value
+  */
 char *cap_string(char *s)
 {
 	int a = 0, i;
@@ -21,7 +21,8 @@ char *cap_string(char *s)
 		{
 			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
 				s[a] -= 32;
-				i++;
+
+			i++;
 		}
 
 		a++;
