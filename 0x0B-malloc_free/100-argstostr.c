@@ -13,9 +13,9 @@
 char *argstostr(int ac, char **av)
 {
 
-	if(ac == 0)
+	if (ac == 0)
 		return (NULL);
-	if(av == NULL)
+	if (av == NULL)
 		return (NULL);
-	return(0);
+	return (0);
 }
