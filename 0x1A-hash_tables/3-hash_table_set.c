@@ -17,14 +17,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
+	/*Obtener numero de index*/
 	index = key_index((const unsigned char *)key, ht->size);
 
+	/*Asignar el index a la tabla tmp para validar si existe*/
 	tmp = ht->array[index];
 
+	/*Si la clave ya esta el indice actualice el valor*/
 	while (tmp != NULL)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
+			free(tmp->value);
 			tmp->value = strdup(value);
 			return (1);
 		}
