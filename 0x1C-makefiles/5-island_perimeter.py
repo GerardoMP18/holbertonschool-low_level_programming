@@ -5,6 +5,9 @@ Function that allows counting the perimeter of the island
 
 
 def island_perimeter(grid):
+    """
+    Function that allows counting the perimeter of the island
+    """
     remove_sides = 0
     perimeter = 0
     for x in range(len(grid)):
