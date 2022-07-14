@@ -10,8 +10,8 @@ def island_perimeter(grid):
         for z in range(len(grid[x])):
             if(grid[x][z] == 1):
                 count_perimeter += 4
-                if(grid[x-1][z] == 1):
+                if(x != 0 and grid[x-1][z] == 1):
                     count_perimeter -= 2
-                elif(grid[x][z-1] == 1):
+                elif(z != 0 and grid[x][z-1] == 1):
                     count_perimeter -= 2
     return count_perimeter
