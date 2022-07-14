@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Function that allows counting the perimeter of the island
+"""
 def island_perimeter(grid):
     count_perimeter = 0
     for x in range(len(grid)):
