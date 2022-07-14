@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c school.c
+# OBJ asigna valor a SRC, despues de sustuir cada .c al final dara un elemento .o
+OBJ = $(SRC:.c=.o)
+NAME = school
+all: $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
